@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre mí - Wilfredo Portillo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body{font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial;}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .glow-ring {
+      background: radial-gradient(circle at 50% 40%, rgba(255,220,150,0.95) 0%, rgba(255,220,150,0.75) 20%, rgba(255,220,150,0.35) 40%, rgba(255,255,255,0) 60%);
+      border-radius: 9999px;
+      padding: 6px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Skip link -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-white p-2 rounded shadow">Ir al contenido</a>
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-sm sticky top-0 z-40" role="banner">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <a href="index.html" class="text-2xl font-extrabold text-blue-600">Wilfredo<span class="text-gray-700"> Portillo</span></a>
+
+        <button id="btn-menu" aria-expanded="false" aria-controls="main-menu"
+          class="md:hidden p-2 rounded-md focus:outline-2 focus:outline-blue-600" aria-label="Abrir menú">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/></svg>
+        </button>
+
+        <nav id="main-menu" class="hidden md:flex md:items-center md:gap-6" role="navigation" aria-label="Menú principal">
+          <a class="hover:text-blue-600" href="index.html">Inicio</a>
+          <a class="hover:text-blue-600" href="portafolio.html">Portafolio</a>
+          <a class="hover:text-blue-600 font-semibold" href="sobre-mi.html">Sobre mí</a>
+          <a class="hover:text-blue-600" href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container mx-auto px-4 py-8">
+    <!-- Tarjeta perfil (sin botones) -->
+    <section class="mb-10">
+      <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 md:p-10">
+        <div class="md:flex md:items-center md:gap-8">
+          <div class="flex-shrink-0 mb-6 md:mb-0 md:w-1/3 flex justify-center">
+            <div class="glow-ring">
+              <img
+                src="https://media.istockphoto.com/id/2165904214/es/foto/engineer-operator-using-scada-system.webp?a=1&b=1&s=612x612&w=0&k=20&c=3iu4JOB8q1-PWJpqjXcYoi8btBxZkvh2OyTeRgvcPhw="
+                alt="Ingeniero trabajando en una computadora"
+                class="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="md:flex-1 text-center md:text-left">
+            <h1 class="text-2xl md:text-3xl font-extrabold text-gray-900">Wilfredo Portillo</h1>
+            <p class="text-sm text-gray-500 mb-3">Desarrollador / Diseño Web Adaptable</p>
+
+            <p class="text-gray-700">
+              Apasionado por UX/UI y accesibilidad. Diseño interfaces limpias, adaptables y con buen rendimiento.
+              Me especializo en Tailwind CSS, maquetación mobile-first y buenas prácticas de accesibilidad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE, EXPERIENCIA, HABILIDADES -->
+    <h2 class="text-3xl font-bold mb-6">Sobre mí</h2>
+    <p class="text-gray-700 mb-6">Soy estudiante de Diseño Web Adaptable. Me interesa UX/UI, accesibilidad y crear interfaces limpias y funcionales.</p>
+
+    <h2 class="text-2xl font-semibold mb-4">Formación y experiencia</h2>
+    <section class="grid gap-6 mb-8">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold">2019 - 2022: Técnico en Desarrollo Web</h3>
+        <p class="text-sm text-gray-600 mt-2">Cursos y proyectos prácticos en maquetación, JavaScript y Figma.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold">2023: Prácticas - Frontend</h3>
+        <p class="text-sm text-gray-600 mt-2">Participación en un equipo pequeño desarrollando componentes y pruebas de accesibilidad.</p>
+      </div>
+    </section>
+
+    <h2 class="text-2xl font-semibold mb-4">Habilidades</h2>
+    <div class="space-y-4 max-w-lg">
+      <div>
+        <div class="flex justify-between mb-1">
+          <span>HTML &amp; CSS</span><span class="font-medium">90%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded h-3"><div class="h-3 bg-blue-600 rounded" style="width:90%"></div></div>
+      </div>
+
+      <div>
+        <div class="flex justify-between mb-1">
+          <span>Tailwind CSS</span><span class="font-medium">80%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded h-3"><div class="h-3 bg-blue-600 rounded" style="width:80%"></div></div>
+      </div>
+
+      <div>
+        <div class="flex justify-between mb-1">
+          <span>Figma</span><span class="font-medium">70%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded h-3"><div class="h-3 bg-blue-600 rounded" style="width:70%"></div></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-gray-600 text-sm">
+    <p>© 2025 Wilfredo Portillo Villalta — Portafolio de Diseño Web Adaptable</p>
+    <p class="mt-2">
+        <a href="contacto.html" class="text-blue-600 hover:underline">Contacto</a> · 
+        <a href="https://github.com/" target="_blank" class="text-blue-600 hover:underline">GitHub</a> · 
+        <a href="https://www.linkedin.com/" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('btn-menu');
+    const menu = document.getElementById('main-menu');
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      menu.classList.toggle('hidden');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
