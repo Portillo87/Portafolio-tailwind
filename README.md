@@ -1,4 +1,4 @@
-# Portafolio Tailwind - Proyecto Estudiante
+# Portafolio Tailwind - Portafolio
 
 Versión de ejemplo del portafolio para la asignatura "Diseño Web Adaptable".
 Incluye:
